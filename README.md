@@ -1,7 +1,7 @@
 # IceDice
 Lua diceroller for teamspeak
 
-download the files and put the IceDice folder in \n
+download the files and put the IceDice folder in
 	C:\Program Files (x86)\TeamSpeak 3 Client\plugins\lua_plugin\
 then in teamspeak:
 	click settings
