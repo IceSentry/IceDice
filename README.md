@@ -60,3 +60,6 @@ In teamspeak:
  - Select lua plugins
  - Click on settings under the plugin selection window and make sure IceDice is selected
  - Restart teamspeak
+
+## If you don't want others to roll dice
+Open events.lua and remove the comment where indicated in the file
