@@ -8,6 +8,10 @@ Type roll {x}d{y}{+z}
  - y = size of dice
  - z = optional parameters, value to add to the total after the roll
 
+Value that are considered critical (maximum value of the rolled dice) will be written in green
+
+Value that are equal to 1 will be written in red
+
 ### Example roll:
 
 Input: 
