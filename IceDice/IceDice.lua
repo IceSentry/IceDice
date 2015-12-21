@@ -20,9 +20,7 @@ end
 --max 75d if x face
 --max 70d if xx face
 local function diceRoller(message, fromName, clientID, fromID)
-    if clientID ~= fromID then
-        returnMsg = "[b]"..fromName.."[/b] "..returnMsg
-    end
+
     printIceDice("IceDice.diceRoller("..message..", "..fromName..")")
 
     -- Initialize the pseudo random number generator
@@ -61,6 +59,11 @@ local function diceRoller(message, fromName, clientID, fromID)
         end
     end
     numberOfDice = string.sub(numberOfDice,1)
+
+    if tonumber(numberOfDice) > 100 or tonumber(numberOfDice) < 0 then
+        return "ERROR: too many dice to roll"
+    end
+
     printIceDice("numberOfDice = "..numberOfDice)
 
     local numberOfDiceFacePos = dPosition+1 --numberOfDiceFace is after d
@@ -107,6 +110,10 @@ local function diceRoller(message, fromName, clientID, fromID)
             returnMsg = returnMsg.." + "..valueToAdd
         end
         returnMsg = returnMsg.."\n = "..total + valueToAdd
+    end
+
+    if clientID ~= fromID then
+        returnMsg = "[b]"..fromName.."[/b] "..returnMsg
     end
 
     printIceDice("returnMsg = "..returnMsg)
