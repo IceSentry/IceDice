@@ -17,8 +17,8 @@ local function onTextMessageEvent(serverConnectionHandlerID, targetMode, toID, f
             ts3.printMessageToCurrentTab("Not connected")
             return
         end
-
-        --if clientID == fromID then --only remove comment if you want only the host running the plugin
+--IF YOU DON'T WANT OTHER PEOPLE TO ROLL REMOVE THE -- ON THE NEXT LINE ONLY
+        --if clientID == fromID then 
             --Get channelID
             local channelID, error = ts3.getChannelOfClient(serverConnectionHandlerID, clientID)
             print(channelID)
@@ -30,6 +30,7 @@ local function onTextMessageEvent(serverConnectionHandlerID, targetMode, toID, f
             local returnMsg = IceDice.diceRoller(message, fromName, clientID, fromID)
 
             ts3.requestSendChannelTextMsg(serverConnectionHandlerID, returnMsg, channelID)
+--IF YOU DON'T WANT OTHER PEOPLE TO ROLL REMOVE THE -- ON THE NEXT LINE ONLY
         --end
     end
     return 0
