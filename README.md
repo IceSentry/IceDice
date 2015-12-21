@@ -10,7 +10,9 @@ Type roll {x}d{y}{+z}
 
 Value that are considered critical (maximum value of the rolled dice) will be written in green.
 
-Value that are equal to 1 will be written in red.
+1's will be written in red.
+
+If someone else in the chat tries to roll their username will be written before writing the result.
 
 ### Example roll:
 
