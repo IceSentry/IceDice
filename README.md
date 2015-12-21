@@ -1,5 +1,5 @@
 # IceDice
-Lua diceroller for teamspeak.
+Simple diceroller for teamspeak made in lua.
 
 ## How to use
 
