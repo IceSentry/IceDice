@@ -32,7 +32,7 @@ Input:
 Output:
 ```
 rolling 10d6
-(<span style="color: green"> 6 </span> + 2 + 5 + 1 + 3 + 2 + 2 + 6 + 1 + 6)
+(<span style="color: green"> 6 </span> + 2 + 5 + <b style='color:red'>1</b> + 3 + 2 + 2 + 6 + 1 + 6)
 = 34
 ```
 
