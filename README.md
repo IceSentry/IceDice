@@ -8,9 +8,9 @@ Type roll {x}d{y}{+z}
  - y = size of dice
  - z = optional parameters, value to add to the total after the roll
 
-Value that are considered critical (maximum value of the rolled dice) will be written in green
+Value that are considered critical (maximum value of the rolled dice) will be written in green.
 
-Value that are equal to 1 will be written in red
+Value that are equal to 1 will be written in red.
 
 ### Example roll:
 
@@ -32,7 +32,7 @@ Input:
 Output:
 ```
 rolling 10d6
-(6 + 2 + 5 + 1 + 3 + 2 + 2 + 6 + 1 + 6)
+(<span style="color: green"> 6 </span> + 2 + 5 + 1 + 3 + 2 + 2 + 6 + 1 + 6)
 = 34
 ```
 
